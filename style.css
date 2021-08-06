@@ -1,20 +1,77 @@
-:root {
-    background: white;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-size: 14px;
     font-family: Arial, sans-serif;
     color: #222;
 }
-.logo {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    width: auto;
+.title {
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    transform: translate(-50%, -50%);
 }
-img .logo {
-    height: 92px;
+.navbar{
+    width: 100%;
+    font-size: 17px;
+}
+#container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sub li{
+    margin: 0 10px;
+}
+.sub li.left{
+    float:left;
+}
+.sub li.right{
+    float:right;
+}
+ul {
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    color: #222;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+.search {
+    width: 100%;
+    text-align: center;
+}
+/*
+.navbar {
+    display: flex;
+    position: fixed;
+    list-style: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 1px 1px;
+    border-bottom: 1px;
+    height: 60px;
+}
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.right {
+    margin-left: auto;
 }
 ul {
     list-style-type: none;
@@ -23,7 +80,7 @@ ul {
     overflow: hidden;
 }
 li {
-    float:left;
+    float:right;
 }
 li a {
     display: block;
@@ -34,5 +91,5 @@ li a {
 }
 li a:hover {
     background-color: #222;
-
 }
+*/
